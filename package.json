@@ -1,10 +1,13 @@
 {
     "private": true,
     "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
+"scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "php artisan serve",
+    "postinstall": "npm run build"
+},
+
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
         "axios": "^1.7.4",
@@ -14,4 +17,5 @@
         "sass": "^1.56.1",
         "vite": "^5.0"
     }
+    
 }
