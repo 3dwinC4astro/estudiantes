@@ -12,6 +12,7 @@ Auth::routes();
 Route::get('home', [UserController::class, 'listUsers'])
     ->middleware('auth')
     ->name('home');
+    
 
 Route::post('home/{userId}/assign-role', [UserController::class, 'assignRole'])
     ->middleware('auth')
